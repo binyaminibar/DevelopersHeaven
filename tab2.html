@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Developer Heaven</title>
+	<style>
+		body {
+			background-image: url('https://images.unsplash.com/photo-1557804506-c1e6eea9f6d2');
+			background-size: cover;
+			background-position: center center;
+			font-family: Arial, sans-serif;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			text-align: center;
+			background-color: #2c3e50;
+			color: #fff;
+			padding: 20px;
+		}
+
+		h1 {
+			font-size: 48px;
+			margin: 0;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin: 0;
+			color: #95a5a6;
+		}
+
+		nav {
+			text-align: center;
+			margin-top: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 10px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		nav a {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #95a5a6;
+			color: #fff;
+			margin: 10px;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+
+		nav a:last-child {
+			margin-right: 0;
+		}
+
+		nav a:hover,
+		nav a.active,
+		nav a:last-child.active {
+			background-color: #2c3e50;
+		}
+
+		nav a:first-child {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			background-color: green;
+			margin: 0;
+		}
+
+		#content {
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Developer Heaven</h1>
+		<h2>The easiest way to find a job and get insights on the programming work industry</h2>
+	</header>
+
+	<nav>
+		<a href="about_us.html">About Us</a>
+		<a href="tab2.html">Tab 2</a>
+		<a href="tab3.html">Tab 3</a>
+		<a href="tab4.html">Tab 4</a>
+	</nav>
+	
+	<div id="content">
+		<form style="display: flex; flex-direction: column; align-items: center;" method="POST" action="form1page.php"><label for="main-branch">Main Branch:</label>
+<select id="main-branch" name="main-branch" required>
+  <option value="">Select one...</option>
+  <option value="developer">I am a developer by profession</option>
+  <option value="learning">I am learning to code</option>
+  <option value="work">I am not primarily a developer, but I write code sometimes as part of my work</option>
+  <option value="hobby">I code primarily as a hobby</option>
+  <option value="none">None of these</option>
+</select><br>
+<label for="coding-activities">coding activities:</label>
+<select id="coding-activities" name="coding-activities" required>
+  <option value="">Select one...</option>
+  <option value="Hobby">Hobby</option>
+  <option value="School or academic work">School or academic work</option>
+  <option value="work">Work</option>
+</select><br>
+<label for="education-level">Education Level:</label>
+<select id="education-level" name="education-level" required>
+  <option value="">Select one...</option>
+  <option value="associate">Associate degree (A.A., A.S., etc.)</option>
+  <option value="bachelor">Bachelor's degree (B.A., B.S., B.Eng., etc.)</option>
+  <option value="master">Master's degree (M.A., M.S., M.Eng., MBA, etc.)</option>
+  <option value="doctoral">Other doctoral degree (Ph.D., Ed.D., etc.)</option>
+  <option value="primary">Primary/elementary school</option>
+  <option value="professional">Professional degree (JD, MD, etc.)</option>
+  <option value="secondary">Secondary school (e.g. American high school, German Realschule or Gymnasium, etc.)</option>
+  <option value="some-college">Some college/university study without earning a degree</option>
+  <option value="other">Something else</option>
+</select><br>
+      <label for="years-coding">How many years have you been coding?:</label>
+      <input type="number" id="years-coding" name="years-coding" min="0" required><br>
+<label for="professional-years-coding">How many years have you been coding as a professional?:</label>
+<input type="number" id="professional-years-coding" name="professional-years-coding" min="0" required><br>
+<label for="GDP">GDP:</label>
+<input type="number" id="GDP" name="GDP" min="0" required><br>
+
+
+<label for="python">Have you worked with Python?</label><br>
+<input type="radio" id="python-yes" name="python" value="yes">
+<label for="python-yes">Yes</label><br>
+<input type="radio" id="python-no" name="python" value="no">
+<label for="python-no">No</label><br>
+
+<label for="javascript">Have you worked with JavaScript?</label><br>
+<input type="radio" id="javascript-yes" name="javascript" value="yes">
+<label for="javascript-yes">Yes</label><br>
+<input type="radio" id="javascript-no" name="javascript" value="no">
+<label for="javascript-no">No</label><br>
+
+<label for="html">Have you worked with HTML?</label><br>
+<input type="radio" id="html-yes" name="html" value="yes">
+<label for="html-yes">Yes</label><br>
+<input type="radio" id="html-no" name="html" value="no">
+<label for="html-no">No</label><br>
+
+<label for="php">Have you worked with PHP?</label><br>
+<input type="radio" id="php-yes" name="php" value="yes">
+<label for="php-yes">Yes</label><br>
+<input type="radio" id="php-no" name="php" value="no">
+<label for="php-no">No</label><br>
+
+<label for="java">Have you worked with Java?</label><br>
+<input type="radio" id="java-yes" name="java" value="yes">
+<label for="java-yes">Yes</label><br>
+<input type="radio" id="java-no" name="java" value="no">
+<label for="java-no">No</label><br>
+
+<label for="c++">Have you worked with C++?</label><br>
+<input type="radio" id="c++-yes" name="c++" value="yes">
+<label for="c++-yes">Yes</label><br>
+<input type="radio" id="c++-no" name="c++" value="no">
+<label for="c++-no">No</label><br>
+
+
+
+
+
+<label for="worked-with-sql">Did you work with SQL?</label><br>
+<span style="display: inline-block;">
+  <input type="radio" id="yes" name="worked-with-sql" value="yes" required>
+  <label for="yes">Yes</label>
+</span>
+<span style="display: inline-block;">
+  <input type="radio" id="no" name="worked-with-sql" value="no">
+  <label for="no">No</label>
+</span><br>
+
+
+<label for="age">Age:</label><br>
+<select id="age" name="age" required>
+  <option value="" disabled selected>Select your age range</option>
+  <option value="0-18 years old">0-18 years old</option>
+  <option value="18-24 years old">18-24 years old</option>
+  <option value="25-34 years old">25-34 years old</option>
+  <option value="35-44 years old">35-44 years old</option>
+  <option value="45-54 years old">45-54 years old</option>
+  <option value="55-64 years old">55-64 years old</option>
+  <option value="65 years or older">65 years or older</option>
+</select><br>
+
+
+
+<label for="gender">What is your gender?</label><br>
+<span style="display: inline-block;">
+  <input type="radio" id="male" name="gender" value="man" required>
+  <label for="male">man</label>
+</span>
+<span style="display: inline-block;">
+  <input type="radio" id="female" name="gender" value="women">
+  <label for="female">women</label>
+</span>
+
+<label for="salary">What is your salary?</label><br>
+<input type="number" id="salary" name="salary" placeholder="Enter your salary" required><br>
+
+
+    <div style="display: flex; justify-content: center;">
+      <button type="submit">Submit</button>
+      <button type="reset" style="margin-left: 1rem;">Reset</button>
+    </div>
+  <div style="margin-top: 1rem;">
+    <button onclick="window.location.href='homepage.html'" style="background-color: #95a5a6; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Back</button>
+  </div>
+  </form>
+</div>
+
+	<script>
+		var navLinks = document.querySelectorAll('nav a');
+		var lastClickedButton = null;
+
+		navLinks.forEach(function(link) {
+			link.addEventListener('click', function(event) {
+				event.preventDefault();
+				var target = this.getAttribute('href');
+				window.location.href = target;
+				if (lastClickedButton !== null) {
+					lastClickedButton.classList.remove('active');
+				}
+				this.classList.add('active');
+				lastClickedButton = this;
+			});
+		});
+	</script>
+</body>
+</html>

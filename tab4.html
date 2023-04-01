@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Developer Heaven</title>
+	<style>
+		body {
+			background-image: url('https://images.unsplash.com/photo-1557804506-c1e6eea9f6d2');
+			background-size: cover;
+			background-position: center center;
+			font-family: Arial, sans-serif;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			text-align: center;
+			background-color: #2c3e50;
+			color: #fff;
+			padding: 20px;
+		}
+
+		h1 {
+			font-size: 48px;
+			margin: 0;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin: 0;
+			color: #95a5a6;
+		}
+
+		nav {
+			text-align: center;
+			margin-top: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 10px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		nav a {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #95a5a6;
+			color: #fff;
+			margin: 10px;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+
+		nav a:last-child {
+			margin-right: 0;
+		}
+
+		nav a:hover,
+		nav a.active,
+		nav a:last-child.active {
+			background-color: #2c3e50;
+		}
+
+		nav a:first-child {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			background-color: green;
+			margin: 0;
+		}
+
+		#content {
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Developer Heaven</h1>
+		<h2>The easiest way to find a job and get insights on the programming work industry</h2>
+	</header>
+
+	<nav>
+		<a href="about_us.html">About Us</a>
+		<a href="tab2.html">Tab 2</a>
+		<a href="tab3.html">Tab 3</a>
+		<a href="tab4.html">Tab 4</a>
+	</nav>
+	
+	<div id="content">
+<div class='tableauPlaceholder' id='viz1680331202992' style='position: relative'><noscript><a href='#'><img alt='Dash 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dash2_16802736264630&#47;Dash1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Dash2_16802736264630&#47;Dash1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dash2_16802736264630&#47;Dash1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1680331202992');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1150px';vizElement.style.height='1177px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1150px';vizElement.style.height='1177px';} else { vizElement.style.width='100%';vizElement.style.height='3577px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>	<script>
+		var navLinks = document.querySelectorAll('nav a');
+		var lastClickedButton = null;
+
+		navLinks.forEach(function(link) {
+			link.addEventListener('click', function(event) {
+				event.preventDefault();
+				var target = this.getAttribute('href');
+				window.location.href = target;
+				if (lastClickedButton !== null) {
+					lastClickedButton.classList.remove('active');
+				}
+				this.classList.add('active');
+				lastClickedButton = this;
+			});
+		});
+	</script>
+</body>
+</html>
